@@ -1,3 +1,6 @@
+var jQuery = require("jquery");
+var Slick = require("./slick.core");
+
 /***
  * Contains basic SlickGrid editors.
  * @module Editors

@@ -4,6 +4,8 @@
  * @namespace Slick
  */
 
+var jQuery = require("jquery");
+
 (function ($) {
   // register namespace
   $.extend(true, window, {
@@ -26,6 +28,8 @@
       "GlobalEditorLock": new EditorLock()
     }
   });
+
+  module.exports = window.Slick;
 
   /***
    * An event object for passing data to event handlers and letting them control propagation.
@@ -455,5 +459,3 @@
     };
   }
 })(jQuery);
-
-

@@ -1,3 +1,6 @@
+var jQuery = require("jquery");
+var Slick = require("./slick.core");
+
 (function ($) {
   $.extend(true, window, {
     Slick: {
@@ -496,7 +499,7 @@
           group = groups[i];
           group.groups = extractGroups(group.rows, group);
         }
-      }      
+      }
 
       groups.sort(groupingInfos[level].comparer);
 

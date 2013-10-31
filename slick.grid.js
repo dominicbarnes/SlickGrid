@@ -1,3 +1,7 @@
+var jQuery = require("jquery");
+require("./lib/jquery.event.drag-2.2");
+var Slick = module.exports = require("./slick.core");
+
 /**
  * @license
  * (c) 2009-2013 Michael Leibman
@@ -2177,7 +2181,7 @@ if (typeof Slick === "undefined") {
             cancelEditAndSetFocus();
           } else if (e.which == 34) {
             navigatePageDown();
-            handled = true;           
+            handled = true;
           } else if (e.which == 33) {
             navigatePageUp();
             handled = true;
@@ -2734,7 +2738,7 @@ if (typeof Slick === "undefined") {
         var prevActivePosX = activePosX;
         while (cell <= activePosX) {
           if (canCellBeActive(row, cell)) {
-            prevCell = cell;  
+            prevCell = cell;
           }
           cell += getColspan(row, cell);
         }

@@ -1,3 +1,6 @@
+var jQuery = require("jquery");
+var Slick = require("./slick.core");
+
 (function ($) {
   $.extend(true, window, {
     Slick: {

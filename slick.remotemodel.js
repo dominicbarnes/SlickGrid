@@ -1,3 +1,6 @@
+var jQuery = require("jquery");
+var Slick = require("./slick.core");
+
 (function ($) {
   /***
    * A sample AJAX data store implementation.
@@ -115,7 +118,7 @@
         var item = resp.results[i].item;
 
         // Old IE versions can't parse ISO dates, so change to universally-supported format.
-        item.create_ts = item.create_ts.replace(/^(\d+)-(\d+)-(\d+)T(\d+:\d+:\d+)Z$/, "$2/$3/$1 $4 UTC"); 
+        item.create_ts = item.create_ts.replace(/^(\d+)-(\d+)-(\d+)T(\d+:\d+:\d+)Z$/, "$2/$3/$1 $4 UTC");
         item.create_ts = new Date(item.create_ts);
 
         data[from + i] = item;
